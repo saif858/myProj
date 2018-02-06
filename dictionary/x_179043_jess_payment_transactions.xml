@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Payment transactions" max_length="40" name="x_179043_jess_payment_transactions" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Amount" max_length="20" name="u_amount" type="currency"/>
+        <element label="Next transaction" max_length="40" name="u_next_transaction" type="glide_date"/>
+        <element label="Notes" max_length="500" name="u_notes" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="u_status" type="choice">
+            <choice>
+                <element label="Pending" value="pending"/>
+                <element label="Processed" value="processed"/>
+                <element label="Rejected" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Transaction date" max_length="40" name="u_transaction_date" type="glide_date"/>
+        <element choice="1" label="Transaction type" max_length="40" name="u_transaction_type" type="choice">
+            <choice>
+                <element label="Deposit" value="deposit"/>
+                <element label="Withdraw" value="withdraw"/>
+            </choice>
+        </element>
+    </element>
+</database>

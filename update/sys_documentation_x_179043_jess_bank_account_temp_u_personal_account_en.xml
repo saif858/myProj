@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_personal_account" label="Personal Account" language="en" table="x_179043_jess_bank_account_temp">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_personal_account</element>
+            <help/>
+            <hint/>
+            <label>Personal Account</label>
+            <language>en</language>
+            <name>x_179043_jess_bank_account_temp</name>
+            <plural>Personal Accounts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-14 22:25:27</sys_created_on>
+            <sys_id>82d9f75bdbe703003e33f7fdbf96198e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Personal Account</sys_name>
+            <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+            <sys_update_name>sys_documentation_x_179043_jess_bank_account_temp_u_personal_account_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-14 22:25:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

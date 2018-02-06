@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Childcare Services" max_length="40" name="x_179043_jess_childcare_services" type="collection">
+        <element label="Centre ID" max_length="32" name="u_centre_id" reference="x_179043_jess_childcare_centre" type="reference"/>
+        <element label="Services" max_length="32" name="u_services" reference="x_179043_jess_available_services" type="reference"/>
+        <index name="index">
+            <element name="u_services"/>
+        </index>
+        <index name="index2">
+            <element name="u_centre_id"/>
+        </index>
+    </element>
+</database>

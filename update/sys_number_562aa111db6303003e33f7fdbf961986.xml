@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_179043_jess_child_information">x_179043_jess_child_information</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>CHI</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-08 06:49:50</sys_created_on>
+        <sys_id>562aa111db6303003e33f7fdbf961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CHI</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>sys_number_562aa111db6303003e33f7fdbf961986</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-08 06:49:50</sys_updated_on>
+    </sys_number>
+</record_update>

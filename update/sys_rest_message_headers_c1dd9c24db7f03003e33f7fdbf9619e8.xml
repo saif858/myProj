@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="INSERT_OR_UPDATE">
+        <name>Authorization</name>
+        <rest_message display_value="NAB Account Info">e6916f04db3703003e33f7fdbf961953</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-18 03:38:23</sys_created_on>
+        <sys_id>c1dd9c24db7f03003e33f7fdbf9619e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>sys_rest_message_headers_c1dd9c24db7f03003e33f7fdbf9619e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-18 03:38:23</sys_updated_on>
+        <value>NDZkZDUxMjYtYjg0Zi00OWRmLTkxY2QtNGRlOTcyYTkyMDAw</value>
+    </sys_rest_message_headers>
+</record_update>

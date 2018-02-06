@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-11 01:37:44</sys_created_on>
+        <sys_id>337f7f46dba303003e33f7fdbf96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.setValue</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>sys_scope_privilege_337f7f46dba303003e33f7fdbf96196a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-11 01:37:44</sys_updated_on>
+        <target_name>GlideRecord.setValue</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_payment_schedule" table="x_179043_jess_payment_details" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_payment_schedule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Daily</label>
+            <language>en</language>
+            <name>x_179043_jess_payment_details</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-09 23:27:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db08daf1dbeb03003e33f7fdbf9619de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-09 23:27:30</sys_updated_on>
+            <value>daily</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_payment_schedule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fortnightly</label>
+            <language>en</language>
+            <name>x_179043_jess_payment_details</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-09 23:28:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0328daf1dbeb03003e33f7fdbf961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-09 23:28:07</sys_updated_on>
+            <value>fortnightly</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_payment_schedule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Monthly</label>
+            <language>en</language>
+            <name>x_179043_jess_payment_details</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-09 23:28:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f38daf1dbeb03003e33f7fdbf961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-09 23:28:31</sys_updated_on>
+            <value>monthly</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_payment_schedule</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weekly</label>
+            <language>en</language>
+            <name>x_179043_jess_payment_details</name>
+            <sequence/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-09 23:27:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb18daf1dbeb03003e33f7fdbf961927</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-09 23:27:45</sys_updated_on>
+            <value>weekly</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_payment_schedule</element>
+            <name>x_179043_jess_payment_details</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-09 23:27:30</sys_created_on>
+            <sys_id>9e181af1dbeb03003e33f7fdbf9619fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_payment_schedule</sys_name>
+            <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+            <sys_update_name>sys_choice_x_179043_jess_payment_details_u_payment_schedule</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-09 23:27:30</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

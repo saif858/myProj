@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_179043_jess_payment_details" label="Bank Account Temp" max_length="40" name="x_179043_jess_bank_account_temp" type="collection">
+        <element label="Centre ID" max_length="32" name="u_centre_id" reference="cmn_location" reference_qual="parent=4aa1d1a5db6303003e33f7fdbf96190b^EQ" reference_qual_condition="parent=4aa1d1a5db6303003e33f7fdbf96190b^EQ" type="reference"/>
+        <element label="Client ID" max_length="32" name="u_client_id" reference="x_179043_jess_client_information" type="reference"/>
+        <element label="Personal Account" max_length="40" name="u_personal_account" type="boolean"/>
+        <index name="index">
+            <element name="u_centre_id"/>
+        </index>
+        <index name="index2">
+            <element name="u_client_id"/>
+        </index>
+    </element>
+</database>

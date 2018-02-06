@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Client account withdrawal</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:10:00</run_period>
+        <run_start>2018-01-10 06:41:35</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var myDate = new GlideDate();
+var tempNewDate = new GlideDateTime();
+
+gs.info('Client Withdrawal'+'\nmyDate: '+myDate+
+'\ntempNewDate: '+tempNewDate);
+
+try{
+	tempNewDate.addDaysLocalTime(1);
+	var nextDate = tempNewDate.toString().split(' ')[0];
+	var clientTransRec = new GlideRecord('x_179043_jess_client_transaction_record');
+	
+	clientTransRec.addQuery('u_transaction_date','>=', myDate);
+	clientTransRec.addQuery('u_transaction_date','<=', myDate);
+	clientTransRec.addQuery('u_status','pending');
+	clientTransRec.query();
+
+	while(clientTransRec.next()){
+		
+// 		gs.info(i + ' :' + '\n Transaction Date: '+ clientTransRec.u_transaction_date +
+// 		'\n ClientID: '+ clientTransRec.u_client_id.u_client_id.number +
+// 		'\n TransactionID: '+ clientTransRec.number +
+// 		'\n nextDate: '+ nextDate);
+		
+		clientTransRec.setValue('u_status','processed');
+		var myNotes = clientTransRec.getValue('u_notes');
+		clientTransRec.setValue('u_notes', myNotes + '\nThis value has been processed automatically');
+		clientTransRec.update();
+		
+		//Insert new record
+		var myUserSysID = this.clientTransRec.u_client_id.sys_id;
+		var myAmount = this.clientTransRec.getValue('u_amount');
+		
+		var newTransRec = new GlideRecord('x_179043_jess_client_transaction_record');
+		newTransRec.initialize();
+		newTransRec.setValue('u_client_id', myUserSysID);
+		newTransRec.setValue('u_transaction_date', nextDate);
+		newTransRec.setValue('u_status','pending');
+		newTransRec.setValue('u_transaction_type','withdraw');
+		newTransRec.setValue('u_amount', myAmount);
+		newTransRec.setValue('u_notes', 'This record was created automatically by the sytem for the next payment'+
+		'transaction\n' + tempNewDate + '\nNextDate: ' + nextDate +
+		'\n'+ clientTransRec.u_client_id.u_client_id.number);
+		newTransRec.insert();
+	}
+}
+catch(err){
+	gs.info(err);
+	
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-10 07:22:15</sys_created_on>
+        <sys_id>787bbb35dbaf03003e33f7fdbf961902</sys_id>
+        <sys_mod_count>227</sys_mod_count>
+        <sys_name>Client account withdrawal</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>sysauto_script_787bbb35dbaf03003e33f7fdbf961902</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-25 02:52:41</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

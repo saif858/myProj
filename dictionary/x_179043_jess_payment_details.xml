@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Payment details" max_length="40" name="x_179043_jess_payment_details" type="collection">
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Account name" max_length="50" name="u_account_name" type="string"/>
+        <element label="Account number" max_length="20" name="u_account_number" type="string"/>
+        <element label="Account Token" max_length="70" name="u_account_token" read_only="true" type="string"/>
+        <element default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Bank name" max_length="50" name="u_bank_name" type="string"/>
+        <element label="BSB" max_length="6" name="u_bsb" type="string"/>
+        <element label="Card name" max_length="50" name="u_card_name" type="string"/>
+        <element label="Card number" max_length="16" name="u_card_number" type="string"/>
+        <element label="CVV" max_length="4" name="u_cvv" type="string"/>
+        <element label="Expiry date" max_length="40" name="u_expiry_date" type="glide_date"/>
+        <element label="Payment amount" max_length="20" name="u_payment_amount" type="currency"/>
+        <element choice="1" label="Payment schedule" max_length="40" name="u_payment_schedule" type="choice">
+            <choice>
+                <element label="Daily" value="daily"/>
+                <element label="Fortnightly" value="fortnightly"/>
+                <element label="Monthly" value="monthly"/>
+                <element label="Weekly" value="weekly"/>
+            </choice>
+        </element>
+        <element choice="1" label="Payment type" max_length="40" name="u_payment_type" type="choice">
+            <choice>
+                <element label="Cash" value="cash"/>
+                <element label="Credit card" value="cc"/>
+                <element label="Direct debit" value="dd"/>
+                <element label="Paypal" value="pp"/>
+            </choice>
+        </element>
+    </element>
+</database>

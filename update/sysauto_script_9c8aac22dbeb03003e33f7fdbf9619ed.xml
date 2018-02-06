@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Centre account deposit</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-01-11 23:24:07</run_start>
+        <run_time>1970-01-01 11:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var today = new GlideDate();
+var nToday = new GlideDateTime();
+
+try{
+	gs.info('Centre Deposit'+'\ntoday: '+today+
+	'\nnToday: '+nToday);
+	nToday.addDaysLocalTime(5);
+	var nxtTrans = nToday.toString().split(' ') [0];
+}catch(err){
+	gs.info(err);
+}
+
+var cTransRec = new GlideRecord('x_179043_jess_centre_transaction_record');
+cTransRec.addQuery('u_status','pending');
+cTransRec.addQuery('u_transaction_date','>=',today);
+cTransRec.addQuery('u_transaction_date','<=',today);
+
+cTransRec.query();
+
+while(cTransRec.next()){
+	try{
+		cTransRec.setValue('u_status','processed');
+		var myNotes = cTransRec.getValue('u_notes');
+		cTransRec.setValue('u_notes', myNotes + '\nThis transaction has been processed automatically');
+		cTransRec.update();
+		
+		var myCentSysID = this.cTransRec.u_centre_id.sys_id;
+		var myAmount = this.cTransRec.getValue('u_amount');
+		
+		//Insert the next transaction Record
+		var cNewTransRec = new GlideRecord('x_179043_jess_centre_transaction_record');
+		cNewTransRec.initialize();
+		cNewTransRec.setValue('u_centre_id', myCentSysID);
+		cNewTransRec.setValue('u_transaction_date', nxtTrans);
+		cNewTransRec.setValue('u_status','pending');
+		cNewTransRec.setValue('u_transaction_type','deposit');
+		cNewTransRec.setValue('u_amount', myAmount);
+		cTransRec.setValue('u_notes', 'This record was created automatically by the sytem for the next'+
+		'payment transaction\n' + nToday);
+		cNewTransRec.insert();
+	}
+	catch(err){
+		gs.info(err);
+	}
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-11 23:24:53</sys_created_on>
+        <sys_id>9c8aac22dbeb03003e33f7fdbf9619ed</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Centre account deposit</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>sysauto_script_9c8aac22dbeb03003e33f7fdbf9619ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-25 02:57:55</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

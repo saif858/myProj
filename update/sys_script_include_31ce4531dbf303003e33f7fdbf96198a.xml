@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_179043_jess.BankAccountInfo</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>BankAccountInfo</name>
+        <script><![CDATA[var BankAccountInfo = Class.create();
+BankAccountInfo.prototype = {
+	initialize: function() {
+	},
+	
+	clientAccounts : function() {
+		try {
+			var r = new sn_ws.RESTMessageV2('x_179043_jess.NAB Account Info', 'Default GET');
+			var rest = r.execute();			
+			var responseBody = rest.getBody();
+			var httpStatus = rest.getStatusCode();
+			
+			var parser = new global.JSON();
+			var parsed = parser.decode(responseBody);			
+			var myAccToken =[];
+			
+			for (i = 0;  i<parsed.response.accountSummaries.length; i++){
+				//myAccToken = parsed.response.accountSummaries[i].accountToken;
+				myAccToken.push(parsed.response.accountSummaries[i].accountToken);
+			}
+			
+			return myAccToken;
+		}
+		catch(ex) {
+			gs.info(ex);
+		}		
+	},
+	
+	
+	type: 'BankAccountInfo'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-22 04:38:55</sys_created_on>
+        <sys_id>31ce4531dbf303003e33f7fdbf96198a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>BankAccountInfo</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>sys_script_include_31ce4531dbf303003e33f7fdbf96198a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-22 23:36:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_179043_jess_payment_transactions" label="Client Transaction Record" max_length="40" name="x_179043_jess_client_transaction_record" type="collection">
+        <element label="Client ID" max_length="32" name="u_client_id" reference="x_179043_jess_client_payment_details" type="reference"/>
+        <index name="index">
+            <element name="u_client_id"/>
+        </index>
+    </element>
+</database>

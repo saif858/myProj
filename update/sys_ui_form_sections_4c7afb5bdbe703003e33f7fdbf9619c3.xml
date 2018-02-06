@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="4c7afb5bdbe703003e33f7fdbf9619c3" sys_domain="global" table="x_179043_jess_bank_account_temp" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-14 22:28:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>147afb5bdbe703003e33f7fdbf9619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_179043_jess_bank_account_temp" name="x_179043_jess_bank_account_temp" sys_domain="global" view="Default view">4c7afb5bdbe703003e33f7fdbf9619c3</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_179043_jess_bank_account_temp" sys_domain="global" view="Default view">a199375bdbe703003e33f7fdbf9619f8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-14 22:28:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-14 22:28:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>107afb5bdbe703003e33f7fdbf9619c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_179043_jess_bank_account_temp" name="x_179043_jess_bank_account_temp" sys_domain="global" view="Default view">4c7afb5bdbe703003e33f7fdbf9619c3</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_179043_jess_bank_account_temp" sys_domain="global" view="Default view">407afb5bdbe703003e33f7fdbf9619c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-14 22:28:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_179043_jess_bank_account_temp</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-01-14 22:28:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c7afb5bdbe703003e33f7fdbf9619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_179043_jess_bank_account_temp</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+            <sys_update_name>sys_ui_form_sections_4c7afb5bdbe703003e33f7fdbf9619c3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-01-14 22:28:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

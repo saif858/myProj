@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Available Services" max_length="40" name="x_179043_jess_available_services" sizeclass="7" type="collection"/>
+</database>

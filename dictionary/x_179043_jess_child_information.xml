@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Child Information" max_length="40" name="x_179043_jess_child_information" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Centre ID" max_length="32" name="u_centre_id" reference="x_179043_jess_childcare_centre" type="reference"/>
+        <element label="Client ID" max_length="32" name="u_client_id" reference="x_179043_jess_client_information" type="reference"/>
+        <element label="Date of Birth" max_length="40" name="u_date_of_birth" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="u_name" type="string"/>
+        <element label="Permanent" max_length="40" name="u_permanent" type="boolean"/>
+        <element label="Temporary" max_length="40" name="u_temporary" type="boolean"/>
+        <index name="index">
+            <element name="u_centre_id"/>
+        </index>
+        <index name="index2">
+            <element name="u_client_id"/>
+        </index>
+    </element>
+</database>

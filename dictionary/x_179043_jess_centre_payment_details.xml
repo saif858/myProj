@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_179043_jess_payment_details" label="Centre Payment Details" max_length="40" name="x_179043_jess_centre_payment_details" type="collection">
+        <element display="true" label="Centre ID" max_length="32" name="u_centre_id" reference="x_179043_jess_childcare_centre" type="reference"/>
+        <index name="index">
+            <element name="u_centre_id"/>
+        </index>
+    </element>
+</database>

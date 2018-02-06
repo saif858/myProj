@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>Abjryc2afu6Wp2ScORMlJEGS55zb3mRtTYA2HTc12106yk2UbNqTBHeJoH71Z-2gaWmgPz99clANqt7v</client_id>
+        <client_secret>Jd4RwOkhV4L4ybEag7zKGakHAK87vAS/O2AtC70nleLmOnWqAm9VwS4Vhd46IvpElrG/BRYkKE0tBpL/Ie6VI/SW7MeVAKo3wj+IZfJd7b97MaSa+EyjGA==</client_secret>
+        <client_uuid>9c5722dadbbb03003e33f7fdbf9619f1</client_uuid>
+        <comments/>
+        <default_grant_type>client_credentials</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <name>JESS Paypal SandBox</name>
+        <oauth_api_script/>
+        <redirect_url>https://dev45114.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-24 00:07:39</sys_created_on>
+        <sys_id>105722dadbbb03003e33f7fdbf9619f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>JESS Paypal SandBox</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_update_name>oauth_entity_105722dadbbb03003e33f7fdbf9619f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-24 00:07:46</sys_updated_on>
+        <token_url>https://api.sandbox.paypal.com/v1/oauth2/token</token_url>
+        <type>oauth_provider</type>
+        <user/>
+    </oauth_entity>
+</record_update>

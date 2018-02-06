@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_179043_jess_payment_transactions" label="Centre Transaction Record" max_length="40" name="x_179043_jess_centre_transaction_record" type="collection">
+        <element label="Centre ID" max_length="32" name="u_centre_id" reference="x_179043_jess_centre_payment_details" type="reference"/>
+        <index name="index">
+            <element name="u_centre_id"/>
+        </index>
+    </element>
+</database>

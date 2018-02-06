@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmn_location" label="Childcare Centre" max_length="40" name="x_179043_jess_childcare_centre" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Permanent Positions" max_length="2" name="u_permanent_positions" type="integer"/>
+        <element label="Temp Positions" max_length="2" name="u_temp_positions" type="integer"/>
+    </element>
+</database>
