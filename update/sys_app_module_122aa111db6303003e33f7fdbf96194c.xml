@@ -15,7 +15,7 @@
         <mobile_title>Child Informations</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_179043_jess_child_information</name>
-        <order>3200</order>
+        <order>3400</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>122aa111db6303003e33f7fdbf96194c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Child Information</sys_name>
         <sys_overrides/>
         <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
         <sys_update_name>sys_app_module_122aa111db6303003e33f7fdbf96194c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-25 00:02:31</sys_updated_on>
+        <sys_updated_on>2018-02-08 09:14:41</sys_updated_on>
         <timeline_page/>
         <title>Child Information</title>
         <uncancelable>false</uncancelable>

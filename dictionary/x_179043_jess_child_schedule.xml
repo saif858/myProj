@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_179043_jess_cc_schedule" label="Child Schedule" max_length="40" name="x_179043_jess_child_schedule" type="collection">
+        <element label="Child ID" max_length="32" name="u_child_id" reference="x_179043_jess_child_information" type="reference"/>
+        <index name="index">
+            <element name="u_child_id"/>
+        </index>
+    </element>
+</database>

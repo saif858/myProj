@@ -31,8 +31,48 @@ BankAccountInfo.prototype = {
 			return myAccToken;
 		}
 		catch(ex) {
-			gs.info(ex);
+			gs.info('clientAccounts: '+ex);
 		}		
+	},
+	
+	accountDeductions: function(clientID, amountDed){
+		try{
+// 			gs.info('This is the Script Includ\n'+
+// 				    'clientID: '+clientID+
+// 				    '\namountDed: '+amountDed+'\n');
+			var myBankAcc = new GlideRecord('x_179043_jess_bank_account_temp');
+			myBankAcc.addQuery('u_client_id.number',clientID);
+			myBankAcc.query();
+			
+			//gs.info('Number of Records:'+ myBankAcc.getRowCount());
+			while(myBankAcc.next()){
+				var dVal = parseFloat(amountDed);
+				var bVal = parseFloat(myBankAcc.getValue('u_payment_amount'));
+				
+				//var dVal = amountDed;
+				//var bVal = myBankAcc.getValue('u_payment_amount');
+				
+ 				gs.info( ' BB: '+ myBankAcc.getValue('u_payment_amount') + ' > ' + 'DA: '+ amountDed);
+				//gs.info( bVal + ' > ' + dVal);
+				
+				if(bVal > dVal){
+					//if(myBankAcc.getValue('u_payment_amount') > amountDed){
+					//var myTempAmount = myBankAcc.getDisplayValue('u_payment_amount') - parseFloat(amountDed);
+					var myTempAmount = myBankAcc.getValue('u_payment_amount') - amountDed;
+					gs.info('New Balnce should be: '+ myTempAmount);
+					myBankAcc.setValue('u_payment_amount', myTempAmount);
+					myBankAcc.update();
+					return true;
+				}
+				else{
+					gs.info('FALSE');
+					return false;
+				}
+			}
+		}
+		catch(ex){
+				gs.info('accountDeductions: '+ex);
+		}
 	},
 	
 	
@@ -42,13 +82,13 @@ BankAccountInfo.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-22 04:38:55</sys_created_on>
         <sys_id>31ce4531dbf303003e33f7fdbf96198a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name>BankAccountInfo</sys_name>
         <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
         <sys_update_name>sys_script_include_31ce4531dbf303003e33f7fdbf96198a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-22 23:36:32</sys_updated_on>
+        <sys_updated_on>2018-02-12 03:03:31</sys_updated_on>
     </sys_script_include>
 </record_update>

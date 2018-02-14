@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_child_id" label="Child ID" language="en" table="x_179043_jess_child_schedule">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_child_id</element>
+            <help/>
+            <hint/>
+            <label>Child ID</label>
+            <language>en</language>
+            <name>x_179043_jess_child_schedule</name>
+            <plural>Child IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-02-12 06:08:56</sys_created_on>
+            <sys_id>a870b920dbd813003e33f7fdbf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Child ID</sys_name>
+            <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+            <sys_update_name>sys_documentation_x_179043_jess_child_schedule_u_child_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-02-12 06:08:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

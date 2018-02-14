@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-08 08:54:18</sys_created_on>
+        <sys_id>ffefa513db4413003e33f7fdbf9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_179043_jess_cc_schedule.x_179043_jess.cc_schedule_user</sys_name>
+        <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
+        <sys_security_acl display_value="x_179043_jess_cc_schedule">f7efa513db4413003e33f7fdbf9619a0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ffefa513db4413003e33f7fdbf9619a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-08 08:54:18</sys_updated_on>
+        <sys_user_role display_value="x_179043_jess.cc_schedule_user" name="x_179043_jess.cc_schedule_user">079f2113db4413003e33f7fdbf96198a</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

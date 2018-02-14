@@ -15,7 +15,7 @@
         <mobile_title>Childcare Centres</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_179043_jess_childcare_centre</name>
-        <order>2100</order>
+        <order>1300</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>573fefeadb3303003e33f7fdbf961967</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Childcare Centres</sys_name>
         <sys_overrides/>
         <sys_package display_value="JESS" source="x_179043_jess">790c59d5db2303003e33f7fdbf9619ee</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="JESS">790c59d5db2303003e33f7fdbf9619ee</sys_scope>
         <sys_update_name>sys_app_module_573fefeadb3303003e33f7fdbf961967</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-25 00:23:42</sys_updated_on>
+        <sys_updated_on>2018-02-08 09:16:19</sys_updated_on>
         <timeline_page/>
         <title>Childcare Centres</title>
         <uncancelable>false</uncancelable>

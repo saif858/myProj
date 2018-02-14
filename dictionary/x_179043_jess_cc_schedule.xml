@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="time_sheet" label="CC Schedule" max_length="40" name="x_179043_jess_cc_schedule" type="collection"/>
+</database>
